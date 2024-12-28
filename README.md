@@ -3,7 +3,7 @@
 Map3D is a powerful JavaScript Class that enables real-time 3D visualization of ROS 2D occupancy grid maps in web applications. It provides an easy-to-use interface for converting 2D map data into interactive 3D environments with customizable visualization options.
 ## Demo
 
-![Map3D Demo](media/mapvisualizegif)
+![Map3D Demo](media/mapvisualize.gif)
 
 ## Features
 
