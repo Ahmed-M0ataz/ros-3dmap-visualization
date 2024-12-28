@@ -1,9 +1,6 @@
-# ros-3dmap-visualization
+# Map3D Library
 
-Map3D is a powerful JavaScript Class that enables real-time 3D visualization of ROS 2D occupancy grid maps in web applications. It provides an easy-to-use interface for converting 2D map data into interactive 3D environments with customizable visualization options.
-## Demo
-
-![Map3D Demo](media/mapvisualizegif)
+Map3D is a powerful JavaScript library that enables real-time 3D visualization of ROS 2D occupancy grid maps in web applications. It provides an easy-to-use interface for converting 2D map data into interactive 3D environments with customizable visualization options.
 
 ## Features
 
@@ -12,6 +9,7 @@ Map3D is a powerful JavaScript Class that enables real-time 3D visualization of 
 - Dynamic lighting system with ambient, hemisphere, directional, and point lights
 - Customizable wall heights and cell sizes
 - Shadow mapping support
+- Fog effects for depth perception
 - Responsive design support
 - Built-in grid system for reference
 
@@ -152,3 +150,10 @@ window.addEventListener('resize', () => {
 });
 ```
 
+## Contributing
+
+Feel free to contribute to this project by submitting issues or pull requests. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

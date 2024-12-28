@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotic Control System</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    
+    <script src="./js/roslib.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="container">
+        <header class="header">
+            <h1 class="title">Robotic Control System</h1>
+            <button :class="['connect-btn', connected ? 'connected' : '']" @click="toggleConnection">
+                <i class="fas fa-wifi"></i>
+                {{ connected ? 'Connected' : 'Connect' }}
+            </button>
+        </header>
+
+        <div class="panel map-panel">
+            <h2><i class="fas fa-map"></i> Map View</h2>
+            <button @click="startMapping" class="control-btn">
+                <i class="fas fa-play"></i> Restart Map
+            </button>
+            <div class="map-container">
+                <div id="map" class="map-canvas"></div>
+            </div>
+            <div class="map-controls">
+
+            </div>
+        </div>
+
+    <script src="map3d.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
